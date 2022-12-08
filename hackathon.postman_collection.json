@@ -1,0 +1,906 @@
+{
+	"info": {
+		"_postman_id": "c6926e90-d4e4-40f1-a53a-e45d5fb70b96",
+		"name": "hackathon",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5000/api/v1/employees-- create",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "first_name",
+							"value": "xyz",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "lastname",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "xyz@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "0986667676",
+							"type": "text"
+						},
+						{
+							"key": "organization",
+							"value": "org1",
+							"type": "text"
+						},
+						{
+							"key": "designation",
+							"value": "analyst",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "2000",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "1",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"employees"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:5000/api/v1/employees-- create",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "first_name",
+									"value": "xyz3",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "lastname2",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "xyz3@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0986667673",
+									"type": "text"
+								},
+								{
+									"key": "organization",
+									"value": "org3",
+									"type": "text"
+								},
+								{
+									"key": "designation",
+									"value": "analyst",
+									"type": "text"
+								},
+								{
+									"key": "salary",
+									"value": "2000",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "1",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"employees"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "65"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"41-UaHJAElVqtJFFA+rs56Dy29iOPM\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Dec 2022 07:43:52 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": false,\n    \"message\": \"Employee added successfully!\",\n    \"data\": 3\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:5000/api/v1/employees-- update",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "first_name",
+							"value": "xyz",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "lastname",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "xyz@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "0986667676",
+							"type": "text"
+						},
+						{
+							"key": "organization",
+							"value": "org1",
+							"type": "text"
+						},
+						{
+							"key": "designation",
+							"value": "analyst",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "20001",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "1",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/employees/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"employees",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:5000/api/v1/employees-- update",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "first_name",
+									"value": "xyz",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "lastname",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "xyz@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0986667676",
+									"type": "text"
+								},
+								{
+									"key": "organization",
+									"value": "org1",
+									"type": "text"
+								},
+								{
+									"key": "designation",
+									"value": "analyst",
+									"type": "text"
+								},
+								{
+									"key": "salary",
+									"value": "20001",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "1",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/employees/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"employees",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "57"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"39-5wg0874Axw6vfEwpIu8IcR60yYw\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Dec 2022 07:44:51 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": false,\n    \"message\": \"Employee successfully updated\"\n}"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:5000/api/v1/employees-- Get",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "first_name",
+							"value": "xyz",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "lastname",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "xyz@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "0986667676",
+							"type": "text"
+						},
+						{
+							"key": "organization",
+							"value": "org1",
+							"type": "text"
+						},
+						{
+							"key": "designation",
+							"value": "analyst",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "20001",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "1",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/employees/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"employees",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:5000/api/v1/employees-- Get",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "first_name",
+									"value": "xyz",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "lastname",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "xyz@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0986667676",
+									"type": "text"
+								},
+								{
+									"key": "organization",
+									"value": "org1",
+									"type": "text"
+								},
+								{
+									"key": "designation",
+									"value": "analyst",
+									"type": "text"
+								},
+								{
+									"key": "salary",
+									"value": "20001",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "1",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/employees/1",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"employees",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "249"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"f9-ak9Acn0Vla633YXCGWDjSAHUypE\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Dec 2022 07:44:42 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"first_name\": \"xyz\",\n        \"last_name\": \"lastname\",\n        \"email\": \"xyz@gmail.com\",\n        \"phone\": \"0986667676\",\n        \"organization\": \"org1\",\n        \"designation\": \"analyst\",\n        \"salary\": 20001,\n        \"status\": 1,\n        \"created_at\": \"2022-12-06T07:38:36.000Z\",\n        \"updated_at\": \"2022-12-06T07:38:36.000Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:5000/api/v1/employees-- findAll",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "first_name",
+							"value": "xyz",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "lastname",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "xyz@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "0986667676",
+							"type": "text"
+						},
+						{
+							"key": "organization",
+							"value": "org1",
+							"type": "text"
+						},
+						{
+							"key": "designation",
+							"value": "analyst",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "20001",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "1",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/employees",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"employees"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:5000/api/v1/employees-- findAll",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "first_name",
+									"value": "xyz",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "lastname",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "xyz@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0986667676",
+									"type": "text"
+								},
+								{
+									"key": "organization",
+									"value": "org1",
+									"type": "text"
+								},
+								{
+									"key": "designation",
+									"value": "analyst",
+									"type": "text"
+								},
+								{
+									"key": "salary",
+									"value": "20001",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "1",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/employees",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"employees"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "498"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"1f2-FY3Y85P6TP8WNT3fohGw1xQfW50\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Dec 2022 07:44:33 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "[\n    {\n        \"id\": 1,\n        \"first_name\": \"xyz\",\n        \"last_name\": \"lastname\",\n        \"email\": \"xyz@gmail.com\",\n        \"phone\": \"0986667676\",\n        \"organization\": \"org1\",\n        \"designation\": \"analyst\",\n        \"salary\": 20001,\n        \"status\": 1,\n        \"created_at\": \"2022-12-06T07:38:36.000Z\",\n        \"updated_at\": \"2022-12-06T07:38:36.000Z\"\n    },\n    {\n        \"id\": 2,\n        \"first_name\": \"xyz2\",\n        \"last_name\": \"lastname\",\n        \"email\": \"xyz2@gmail.com\",\n        \"phone\": \"0986667676\",\n        \"organization\": \"org1\",\n        \"designation\": \"analyst\",\n        \"salary\": 2000,\n        \"status\": 1,\n        \"created_at\": \"2022-12-06T07:41:47.000Z\",\n        \"updated_at\": \"2022-12-06T07:41:47.000Z\"\n    }\n]"
+				}
+			]
+		},
+		{
+			"name": "http://localhost:5000/api/v1/employees-- delete ",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "urlencoded",
+					"urlencoded": [
+						{
+							"key": "first_name",
+							"value": "xyz",
+							"type": "text"
+						},
+						{
+							"key": "last_name",
+							"value": "lastname",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "xyz@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "phone",
+							"value": "0986667676",
+							"type": "text"
+						},
+						{
+							"key": "organization",
+							"value": "org1",
+							"type": "text"
+						},
+						{
+							"key": "designation",
+							"value": "analyst",
+							"type": "text"
+						},
+						{
+							"key": "salary",
+							"value": "20001",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "1",
+							"type": "text"
+						}
+					],
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5000/api/v1/employees/3",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5000",
+					"path": [
+						"api",
+						"v1",
+						"employees",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "http://localhost:5000/api/v1/employees-- delete ",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "urlencoded",
+							"urlencoded": [
+								{
+									"key": "first_name",
+									"value": "xyz",
+									"type": "text"
+								},
+								{
+									"key": "last_name",
+									"value": "lastname",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "xyz@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "phone",
+									"value": "0986667676",
+									"type": "text"
+								},
+								{
+									"key": "organization",
+									"value": "org1",
+									"type": "text"
+								},
+								{
+									"key": "designation",
+									"value": "analyst",
+									"type": "text"
+								},
+								{
+									"key": "salary",
+									"value": "20001",
+									"type": "text"
+								},
+								{
+									"key": "status",
+									"value": "1",
+									"type": "text"
+								}
+							],
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/v1/employees/3",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"v1",
+								"employees",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Content-Length",
+							"value": "57"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"39-hu9haihA8nwUyeE1wGF/6TtLFPA\""
+						},
+						{
+							"key": "Date",
+							"value": "Tue, 06 Dec 2022 07:44:08 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Keep-Alive",
+							"value": "timeout=5"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"error\": false,\n    \"message\": \"Employee successfully deleted\"\n}"
+				}
+			]
+		}
+	]
+}
